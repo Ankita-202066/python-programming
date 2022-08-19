@@ -1,0 +1,10 @@
+def uniquePalindromes(string):
+    x=string.split()
+    for i in x:
+        k=[]
+        rev= ''.join(reversed(i))
+        if i.casefold() == rev.casefold():
+            k.append(i.casefold())
+            print(set(k))
+        else:
+            return
